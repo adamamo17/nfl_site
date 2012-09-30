@@ -1,2 +1,11 @@
-<h1>InitialPages#help</h1>
-<p>Find me in app/views/initial_pages/help.html.erb</p>
+<% provide(:title, 'Help') %>
+<h1>Help</h1>
+<p>
+  This is a Rails website to show NFL scores for your favorite team.  Please visit the
+  <a href="http://www.nfl.com/scores">NFL.com Scores Page</a> for more in-depth analysis.
+  To navigate to your particular teams page, please enter the identifier for the team at the end of the URL.
+  For example, for the Arizona Cardinals, navigate to:
+  <a href=teams/ari>URI/teams/ari</a> where URI is the home page.
+
+  Alternatively, find your team on the <a href=/teams>Teams</a> page.
+</p>
