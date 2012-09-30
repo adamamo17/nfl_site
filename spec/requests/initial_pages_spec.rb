@@ -12,7 +12,12 @@ describe "Initial Pages" do
     it "should have the title 'Home'" do
       visit '/initial_pages/home'
       page.should have_selector('title',
-                                :text => "NFL Rails App | Home")
+                                :text => "NFL Rails App")
+    end
+
+    it "should not have a custom page title" do
+      visit '/initial_pages/home'
+      page.should_not have_selector('title', :text => '| Home')
     end
   end
 
