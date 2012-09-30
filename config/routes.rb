@@ -5,4 +5,6 @@ NflSite::Application.routes.draw do
 
   get "initial_pages/about"
 
+  get "initial_pages/contact"
+
 end

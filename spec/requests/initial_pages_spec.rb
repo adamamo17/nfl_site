@@ -42,4 +42,17 @@ describe "Initial Pages" do
     end
   end
 
+  describe "Contact page" do
+
+    it "should have the h1 'Contact'" do
+      visit '/initial_pages/contact'
+      page.should have_selector('h1', :text => 'Contact')
+    end
+
+    it "should have the title 'Contact'" do
+      visit '/initial_pages/contact'
+      page.should have_selector('title', :text => "NFL Rails App | Contact")
+    end
+  end
+
 end
