@@ -1,10 +1,12 @@
 NflSite::Application.routes.draw do
-  get "initial_pages/home"
+  get "coaches/new"
 
-  get "initial_pages/help"
+  root              to: 'initial_pages#home'
 
-  get "initial_pages/about"
+  match '/help',    to: 'initial_pages#help'
+  match '/about',   to: 'initial_pages#about'
+  match '/contact', to: 'initial_pages#contact'
 
-  get "initial_pages/contact"
+  match '/signup',  to: 'coaches#new'
 
 end

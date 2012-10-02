@@ -1,9 +1,17 @@
-<h1>Welcome to the NFL Rails Page</h1>
+<div class="center hero-unit">
+  <h1>Welcome to the NFL Rails Page</h1>
 
-<h2>
-  This is the home page for the
-  <a href="http://www.nfl.com/">NFL</a>
-  Rails App sample application.
-</h2>
-<h2>To see your favorite team, click <a href=/teams>here</a></h2>
+  <h2>
+    This is the home page for the
+    <a href="http://www.nfl.com/">NFL</a>
+    Rails App sample application.
+  </h2>
+  <h2>
+    To see your favorite team, click <a href=/teams>here</a>.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("nfl.png", alt: "NFL"), 'http://www.nfl.com/' %>
 
