@@ -1,9 +1,10 @@
 NflSite::Application.routes.draw do
-  get "teams/index"
+  #get "teams/index"
 
-  get "teams/show"
+  #get "teams/show"
 
   resources :coaches
+  resources :teams
 
   root              to: 'initial_pages#home'
 
@@ -12,5 +13,7 @@ NflSite::Application.routes.draw do
   match '/contact', to: 'initial_pages#contact'
 
   match '/signup',  to: 'coaches#new'
+
+  match '/teams',   to: 'teams#index'
 
 end

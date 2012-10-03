@@ -15,4 +15,6 @@ class Team < ActiveRecord::Base
   attr_accessible :abbrev, :division, :name, :url
 
   self.primary_key = :abbrev
+
+  has_one :coach
 end
