@@ -1,5 +1,9 @@
 NflSite::Application.routes.draw do
-  get "coaches/new"
+  get "teams/index"
+
+  get "teams/show"
+
+  resources :coaches
 
   root              to: 'initial_pages#home'
 
