@@ -10,6 +10,7 @@ NflSite::Application.routes.draw do
 
   match '/signup',  to: 'coaches#new'
 
-  match '/teams',   to: 'teams#index'
+  #match '/teams',   to: 'teams#index'
+
 
 end

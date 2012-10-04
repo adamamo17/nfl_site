@@ -1,3 +1,5 @@
+require 'net/http'
+
 module TeamsHelper
   def find_team (city)
     @game_id = 17;
@@ -40,7 +42,8 @@ module TeamsHelper
 
   def get_coach (team)
     if team.coach != nil
-      "This team is coached by " + team.coach.name + "."
+      @coach = team.coach
+      link_to team.coach.name + ".", "/coaches/" + "#{@coach.id}"
     end
   end
 

@@ -1,0 +1,15 @@
+<div class="center hero-unit">
+  <% provide(:title, @coach.name) %>
+
+  <h1>
+    <%= @coach.name %>
+  </h1>
+  <h2>
+    <%= @coach.name %></a>
+    is the coach of the
+    <a href= <%= '/teams/' + @coach.team.abbrev %> ><%= @coach.team.name %></a>.
+  </h2>
+  <h2>
+    Click <a href=/coaches>here</a> to see a full list of all NFL coaches.
+  </h2>
+</div>

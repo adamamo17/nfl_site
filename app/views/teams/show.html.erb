@@ -7,6 +7,7 @@
   <h2>
     The <a href= <%= @team.url %> ><%= @team.name %></a>
     are a team in the National Football League.  They play in the <%= @team.division %> Division.
+    <%=  if @team.coach != nil; "This team is coached by "; end %>
     <%= get_coach @team %>
   </h2>
   <h2>
@@ -21,5 +22,5 @@
 
 
 <h2>
-  Most recent game score: <%=  @team %>
+  Most recent game score: <%= get_score @team %>
 </h2>

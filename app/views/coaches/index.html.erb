@@ -1,0 +1,19 @@
+<div class="center hero-unit" xmlns="http://www.w3.org/1999/html">
+  <% provide(:title, 'NFL Coaches Home Page') %>
+
+  <h1>Click on Any Coach</h1>
+  <h2>
+    The <a href="http://www.nfl.com/">National Football League</a>
+    has 32 teams and 32 head coaches.  All coaches with accounts on this site will show up here.
+    Click on a coach's name to launch their personal page.
+  </h2>
+</div>
+
+<ul class="coaches">
+  <% @coaches.each do |coach| %>
+      <li>
+        <%= link_to coach.name, coach %>
+        <%=", " + coach.team.name %>
+      </li>
+  <% end %>
+</ul>
