@@ -1,2 +1,25 @@
-<h1>Teams#show</h1>
-<p>Find me in app/views/teams/show.html.erb</p>
+<div class="center hero-unit">
+  <% provide(:title, @team.name) %>
+
+  <h1>
+    <%= @team.name %>
+  </h1>
+  <h2>
+    The <a href= <%= @team.url %> ><%= @team.name %></a>
+    are a team in the National Football League.  They play in the <%= @team.division %> Division.
+    <%= get_coach @team %>
+  </h2>
+  <h2>
+    Click <a href=/teams>here</a> to see a full list of all NFL teams.
+  </h2>
+</div>
+
+
+<%= link_to image_tag((@team.abbrev.to_s + ".png"), alt: "NFL"), @team.url %>
+
+
+
+
+<h2>
+  Most recent game score: <%=  @team %>
+</h2>

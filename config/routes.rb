@@ -1,8 +1,4 @@
 NflSite::Application.routes.draw do
-  #get "teams/index"
-
-  #get "teams/show"
-
   resources :coaches
   resources :teams
 

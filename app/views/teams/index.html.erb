@@ -1,2 +1,77 @@
-<h1>Teams#index</h1>
-<p>Find me in app/views/teams/index.html.erb</p>
+<div class="center hero-unit" xmlns="http://www.w3.org/1999/html">
+  <% provide(:title, 'NFL Teams Home Page') %>
+
+  <h1>Click on Any Team</h1>
+  <h2>
+    The <a href="http://www.nfl.com/">National Football League</a>
+    is undoubtedly the greatest football league in the world.
+    The current defending Superbowl Champions are the <a href=teams/nyg>New York Giants</a>.
+  </h2>
+</div>
+
+<%= link_to image_tag("nyg.png", alt: "NFL"), 'http://www.giants.com/' %>
+
+</br>
+<table border="1">
+  <tr>
+    <th>NFC West</th>
+    <th>NFC North</th>
+    <th>NFC South</th>
+    <th>NFC East</th>
+  </tr>
+  <tr>
+    <td><a href=teams/ari>Arizona Cardinals</a></td>
+    <td><a href=teams/chi>Chicago Bears</a></td>
+    <td><a href=teams/atl>Atlanta Falcons</a></td>
+    <td><a href=teams/dal>Dallas Cowboys</a></td>
+  </tr>
+  <tr>
+    <td><a href=teams/sf>San Francisco 49ers</a></td>
+    <td><a href=teams/det>Detroit Lions</a></td>
+    <td><a href=teams/car>Carolina Panthers</a></td>
+    <td><a href=teams/nyg>New York Giants</a></td>
+  </tr>
+  <tr>
+    <td><a href=teams/sea>Seattle Seahawks</a></td>
+    <td><a href=teams/gb>Green Bay Packers</a></td>
+    <td><a href=teams/no>New Orleans Saints</a></td>
+    <td><a href=teams/phi>Philadelphia Eagles</a></td>
+  </tr>
+  <tr>
+    <td><a href=teams/stl>St. Louis Rams</a></td>
+    <td><a href=teams/min>Minnesota Vikings</a></td>
+    <td><a href=teams/tb>Tampa Bay Buccaneers</a></td>
+    <td><a href=teams/was>Washington Redskins</a></td>
+  </tr>
+</br>
+  <tr>
+    <th>AFC West</th>
+    <th>AFC North</th>
+    <th>AFC South</th>
+    <th>AFC East</th>
+  </tr>
+  <tr>
+    <td><a href=teams/den>Denver Broncos</a></td>
+    <td><a href=teams/bal>Baltimore Ravens</a></td>
+    <td><a href=teams/hou>Houston Texans</a></td>
+    <td><a href=teams/buf>Buffalo Bills</a></td>
+  </tr>
+  <tr>
+    <td><a href=teams/kc>Kansas City Chiefs</a></td>
+    <td><a href=teams/cin>Cincinnati Bengals</a></td>
+    <td><a href=teams/ind>Indianapolis Colts</a></td>
+    <td><a href=teams/mia>Miami Dolphins</a></td>
+  </tr>
+  <tr>
+    <td><a href=teams/oak>Oakland Raiders</a></td>
+    <td><a href=teams/cle>Cleveland Browns</a></td>
+    <td><a href=teams/jac>Jacksonville Jaguars</a></td>
+    <td><a href=teams/ne>New England Patriots</a></td>
+  </tr>
+  <tr>
+    <td><a href=teams/sd>San Diego Chargers</a></td>
+    <td><a href=teams/pit>Pittsburgh Steelers</a></td>
+    <td><a href=teams/ten>Tennessee Titans</a></td>
+    <td><a href=teams/nyj>New York Jets</a></td>
+  </tr>
+</table>

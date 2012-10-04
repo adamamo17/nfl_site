@@ -17,4 +17,9 @@ class Team < ActiveRecord::Base
   self.primary_key = :abbrev
 
   has_one :coach
+
+  validates :name, presence: true
+  validates :abbrev, presence: true, length: { maximum: 3 }, uniqueness: { case_sensitive: false }
+  validates :url, presence: true
+  validates :division, presence: true
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121003065723) do
+ActiveRecord::Schema.define(:version => 20121003083027) do
 
   create_table "coaches", :force => true do |t|
     t.string   "name"
@@ -30,5 +30,7 @@ ActiveRecord::Schema.define(:version => 20121003065723) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  add_index "teams", ["abbrev"], :name => "index_teams_on_abbrev", :unique => true
 
 end
