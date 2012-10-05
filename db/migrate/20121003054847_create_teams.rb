@@ -8,10 +8,5 @@ class CreateTeams < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :teams, [:abbrev], :unique => true
-    add_index :teams, :name
-    add_index :teams, :abbrev
-    add_index :teams, :url
-    add_index :teams, :division
   end
 end

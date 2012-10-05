@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(:version => 20121005065744) do
   end
 
   create_table "teams", :id => false, :force => true do |t|
-    t.integer  "id"
     t.string   "name"
     t.string   "abbrev"
     t.string   "url"

@@ -1,4 +1,4 @@
-<div class="center hero-unit">
+<div class="center hero-unit" xmlns="http://www.w3.org/1999/html">
   <% provide(:title, @team.name) %>
 
   <h1>
@@ -10,13 +10,14 @@
     <%=  if @team.coach != nil; "This team is coached by "; end %>
     <%= get_coach @team %>
   </h2>
+  <%= link_to image_tag((@team.abbrev.to_s + ".png"), alt: "NFL"), @team.url %>
+  </br>
   <h2>
     Click <a href=/teams>here</a> to see a full list of all NFL teams.
   </h2>
 </div>
 
 
-<%= link_to image_tag((@team.abbrev.to_s + ".png"), alt: "NFL"), @team.url %>
 
 
 
