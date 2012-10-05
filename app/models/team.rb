@@ -12,7 +12,7 @@
 #
 
 class Team < ActiveRecord::Base
-  attr_accessible :abbrev, :division, :name, :url
+  attr_accessible :abbrev, :division, :name, :url, :id
 
   self.primary_key = :abbrev
 
