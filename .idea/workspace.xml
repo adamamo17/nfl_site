@@ -19,17 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="3" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1349343577000" expanded="true" signature="33:346" placeholder="do ... end" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/coaches/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,19 +80,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/team_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="49" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1349335653000" expanded="true" signature="336:1224" placeholder="do ... end" />
-                <marker date="1349335653000" expanded="true" signature="1027:1219" placeholder="do ... end" />
-                <marker date="1349335653000" expanded="true" signature="1190:1213" placeholder="{ ... }" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="coach.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/coach.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,7 +92,16 @@
       <file leaf-file-name="team.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/team.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="43" selection-start="642" selection-end="642" vertical-scroll-proportion="0.65460527">
+            <state line="23" column="43" selection-start="620" selection-end="620" vertical-scroll-proportion="1.1348684">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20121005065744_remove_null_id_from_teams.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20121005065744_remove_null_id_from_teams.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="39" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/models/team_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121003083027_add_index_to_teams_abbrev.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20121002080240_add_index_to_users_email.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
@@ -148,6 +132,7 @@
         <option value="$PROJECT_DIR$/app/views/coaches/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/initial_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/models/team.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20121005065744_remove_null_id_from_teams.rb" />
       </list>
     </option>
   </component>
@@ -864,25 +849,11 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="46" selection-start="80" selection-end="80" vertical-scroll-proportion="0.10714286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="220" selection-end="245" vertical-scroll-proportion="0.29801324">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="3" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1349343577000" expanded="true" signature="33:346" placeholder="do ... end" />
+            <marker date="1349343577000" expanded="true" signature="-1:-1" placeholder="do ... end" />
           </folding>
         </state>
       </provider>
@@ -898,9 +869,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="49" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1349335653000" expanded="true" signature="336:1224" placeholder="do ... end" />
-            <marker date="1349335653000" expanded="true" signature="1027:1219" placeholder="do ... end" />
-            <marker date="1349335653000" expanded="true" signature="1190:1213" placeholder="{ ... }" />
+            <marker date="1349420440000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1349420440000" expanded="true" signature="-1:-1" placeholder="do ... end" />
+            <marker date="1349420440000" expanded="true" signature="-1:-1" placeholder="{ ... }" />
           </folding>
         </state>
       </provider>
@@ -982,9 +953,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20121005065744_remove_null_id_from_teams.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/team.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="43" selection-start="642" selection-end="642" vertical-scroll-proportion="0.65460527">
+        <state line="23" column="43" selection-start="620" selection-end="620" vertical-scroll-proportion="1.1348684">
           <folding />
         </state>
       </provider>

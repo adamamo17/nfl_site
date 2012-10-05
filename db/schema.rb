@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121003083027) do
+ActiveRecord::Schema.define(:version => 20121005065744) do
 
   create_table "coaches", :force => true do |t|
     t.string   "name"
@@ -22,7 +22,8 @@ ActiveRecord::Schema.define(:version => 20121003083027) do
     t.string   "team_id"
   end
 
-  create_table "teams", :force => true do |t|
+  create_table "teams", :id => false, :force => true do |t|
+    t.integer  "id"
     t.string   "name"
     t.string   "abbrev"
     t.string   "url"
