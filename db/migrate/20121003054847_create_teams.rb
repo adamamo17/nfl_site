@@ -1,6 +1,6 @@
 class CreateTeams < ActiveRecord::Migration
   def change
-    create_table :teams do |t|
+    create_table :teams, :id => false do |t|
       t.string :name
       t.string :abbrev
       t.string :url
@@ -8,5 +8,10 @@ class CreateTeams < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :teams, [:abbrev], :unique => true
+    add_index :teams, :name
+    add_index :teams, :abbrev
+    add_index :teams, :url
+    add_index :teams, :division
   end
 end
