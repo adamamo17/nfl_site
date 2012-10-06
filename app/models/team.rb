@@ -21,4 +21,17 @@ class Team < ActiveRecord::Base
   validates :abbrev, presence: true, length: { maximum: 3 }, uniqueness: { case_sensitive: false }
   validates :url, presence: true
   validates :division, presence: true
+
+  def self.get_ids
+    @ids = []
+    @id_hash = self.connection.select_all("select abbrev from teams")
+    @ids << ""
+    @id_hash.count.times.each do |item|
+      @team = Team.find(@id_hash[item]["abbrev"])
+      if(@team.coach == nil)
+        @ids << @id_hash[item]["abbrev"]
+      end
+    end
+    @ids
+  end
 end

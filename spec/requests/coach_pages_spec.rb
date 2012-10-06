@@ -18,4 +18,17 @@ describe "Coaches" do
     it { should have_selector('h1',    text: 'Click on Any Coach') }
   end
 
+  describe "signup" do
+
+    before { visit signup_path }
+
+    let(:submit) { "Create my account" }
+
+    describe "with invalid information" do
+      it "should not create a coach" do
+        expect { click_button submit }.not_to change(Coach, :count)
+      end
+    end
+  end
+
 end
