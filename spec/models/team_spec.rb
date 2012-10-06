@@ -2,7 +2,6 @@
 #
 # Table name: teams
 #
-#  id         :integer
 #  name       :string(255)
 #  abbrev     :string(255)      primary key
 #  url        :string(255)
